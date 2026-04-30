@@ -123,7 +123,7 @@ export default function App() {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white overflow-x-hidden w-full">
       {/* Navigation */}
       <motion.nav
         initial={{ y: -100 }}
@@ -189,7 +189,7 @@ export default function App() {
       </motion.nav>
 
       {/* Hero Section */}
-      <section id="home" className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-24 pb-12 sm:pt-0">
+      <section id="home" className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-24 pb-12 sm:pt-0 w-full">
         {/* Image Carousel Background */}
         <div className="absolute inset-0 z-0">
           <Slider {...carouselSettings} className="h-full">
