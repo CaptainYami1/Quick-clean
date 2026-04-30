@@ -189,7 +189,7 @@ export default function App() {
       </motion.nav>
 
       {/* Hero Section */}
-      <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section id="home" className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-24 pb-12 sm:pt-0">
         {/* Image Carousel Background */}
         <div className="absolute inset-0 z-0">
           <Slider {...carouselSettings} className="h-full">
@@ -208,12 +208,12 @@ export default function App() {
         {/* Overlay gradient */}
         <div className="absolute inset-0 z-[1] bg-gradient-to-b from-transparent via-transparent to-blue-900/30"></div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 text-center">
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mt-12 sm:mt-0">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 drop-shadow-2xl"
+            className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white mb-6 drop-shadow-2xl"
           >
             Professional Cleaning
             <br />
